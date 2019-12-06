@@ -43,6 +43,8 @@ impl Server {
             }
         }
 
+        index_to_remove.reverse();
+
         for index in index_to_remove {
             peers.swap_remove(index);
         }
